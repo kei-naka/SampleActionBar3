@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- parentを指定しないとRuntimeExceptionになる -->
+    <style name="CustomTheme" parent="Theme.AppCompat.Light">
+        　　<!-- タイトルバーの高さを調整 -->
+        <!--<item name="android:windowTitleSize">50dp</item>-->
+        　　<!-- 既存のタイトルバーのスタイルを無効にする -->
+        <!--<item name="android:windowTitleBackgroundStyle">@null</item>-->
+        <item name="android:actionBarStyle">@style/actionBar</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/actionBar</item>
+
+    </style>
+
+    <style name="actionBar" parent="Widget.AppCompat.ActionBar">
+        <!-- 動かなかった：背景色
+        <item name="android:background">@color/action_bar_background</item> -->
+    </style>
+
+</resources>

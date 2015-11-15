@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/tools">
+    <!--
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    -->
+
+    <!-- showAsAction が
+    always の場合は、アイコンタップすると、検索窓の右に☓アイコン表示、HOMEアイコン表示、HOME UPアイコン（＜）は非表示。
+    collapseActionView の場合は、アイコンタップすると、検索窓の右に☓アイコン非表示、HOMEアイコン非表示、戻るための矢印（←）が表示。
+    android:showAsAction じゃなくて、app:showAsAction なのが間違えやすい。
+    -->
+    <item
+        android:id="@+id/action_search"
+        app:showAsAction="always"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="search" />
+
+    <!-- 設定メニューを常時表示
+     @see also http://allabout.co.jp/gm/gc/439463/
+     icon: https://sites.google.com/site/technoute/android/icon/drawable -->
+    <!--
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="setting" />
+-->
+    <!--
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+        -->
+</menu>
